@@ -1,0 +1,73 @@
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Khu vực chứa game */
+#game-container {
+    width: 100vw;
+    height: 100vh;
+    background: url("images/background.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+/* Nhân vật */
+#character-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;  /* Chiếm 60% màn hình ngang */
+}
+
+#character {
+    width: 100%;
+    height: auto;
+}
+
+/* Hộp thoại */
+#dialog-box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.445);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.24);
+    text-align: center;
+    font-size: 24px;
+}
+#next-btn:hover {
+    background-color: #ff4f8c;
+}
+/* Màn hình loading */
+#loading-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 202, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading-screen img {
+    width: 83%;
+    height: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+/* Ẩn game lúc đầu */
+#game-container {
+    display: none;
+}
